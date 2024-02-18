@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type:none;
+    
+    
+}
+input,button{
+    cursor: pointer;
+}
+body {
+    background-image: url("../image/List-background.webp");
+    height: 100vh;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+
+}
+.list{
+    
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    padding: 30px;
+    margin: auto;
+    
+    
+}
+.list h1{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+.list .post {
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.list .taskInput{
+    background-color: #9de097;
+    height: 40px;
+    width: 300px;
+    border: #000 solid 3px;
+    padding: 5px;
+    
+}
+.list .add{
+    cursor: pointer;
+    background-color: rgba(68, 216, 54, 0.933);
+    height: 40px;
+    width: 70px;
+    border: #000 solid 3px;
+    padding: 5px;
+    text-transform: capitalize;
+
+}
+.list .add:hover{
+    opacity: .8;
+}
+.list ul{
+    
+    display: flex;
+    font-size: 20px;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 55%;
+    margin: auto;
+    gap: 5px;
+    
+    
+}
+.list ul li{
+    background-color: #c0bebe;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 40%;
+    border-radius: 4px;
+    padding: 10px;
+    margin: auto;
+    
+}
+.list li span {
+    line-height: normal;
+}
+.list ul li:hover{
+    opacity: .9;
+}
+.removeText{
+    text-decoration:line-through;
+}
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
